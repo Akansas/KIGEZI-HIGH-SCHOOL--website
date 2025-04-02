@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Kigezi High School</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="khs badge2.jpg" alt="school Logo" class="logo-img">
+                <span> KIGEZI HIGH SCHOOL</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="news.html">News & Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Kigezi High School</h1>
+            <p class="motto">"I SERVE"</p>
+            <p class="welcome-message">
+                At <b>KIGEZI HIGH SCHOOL</b>, we are committed to providing a nurturing environment 
+                where students can thrive academically, socially, and emotionally. 
+                Join us on a journey of discovery and growth!
+            </p>
+            <a href="about.html" class="cta-button">Learn More</a>
+        </div>
+    </section>
+
+    <section class="slideshow-section">
+        <h2>Our School in Action</h2>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="khs interhouse.jpg" alt="Interhouse tournament">
+                    <div class="carousel-caption">Interhouse tournament finals 2023</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="khs centinery.jpg" alt="Multipurpose centinary building">
+                    <div class="carousel-caption">The proposed Multipurpose centinary building</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Image7.png" alt="Students at Parliament">
+                    <div class="carousel-caption">Students at parliament</div>
+                </div>
+            </div>
+            <button class="carousel-control prev" onclick="moveSlide(-1)">❮</button>
+            <button class="carousel-control next" onclick="moveSlide(1)">❯</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2023 Kigezi High School. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="index.js"></script>
+</body>
+</html>

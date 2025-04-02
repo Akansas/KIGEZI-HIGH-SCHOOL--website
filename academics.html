@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Kigezi High School academics</title>
+        <link rel="stylesheet"
+        href="academics.css">
+    </head>
+    <body>
+
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="khs badge2.jpg" alt="Kigezi High School Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="news.html">News & Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+               </nav>
+        </header>
+    
+
+    <main class="main">
+        <h1>School Curriculum</h1>
+        <p>Below is a list of subjects offered at our school</p>
+        <button
+        class="accordion">Mathematics</button>
+        <div class ="panel">
+            <p>Includes Algebra, Geometry, and Trigonometry</p>
+        </div>
+        <button class="accordion">Science</button>
+        <div class="panel">
+            <p>Includes Physics, Chemistry, Biology, Agriculture, Technical Drawing</p>
+        </div>
+        <button class="accordion">Humanities</button>
+        <div class="panel">
+            <p>Includes History, Geography, Entreprenuership and CRE</p>
+        </div>
+        <button class="accordion">Languages</button>
+        <div class="panel">
+            <p>Inludes English, Literature in English, French, Kiswahili</p>
+        </div>
+        <br><br><br>
+        <p><button>Below are the subjects offered at Kigezi High School and their respective teachers</button> </p>
+       
+        <table >
+
+        <tr>
+            <th><button>Subject</button></th>
+            <th><button>Teacher</button></th>
+        </tr>
+        <tr>
+        <td rowspan="2">Agriculture</td>
+        <td>Sabimana Robert</td>
+</tr>
+<tr>
+    <td>Ngabirano Joyce Hamujuni</td>
+</tr>
+<tr>
+    <td rowspan="3">Biology</td>
+    <td>Nsaba Teddy</td>
+</tr>
+<tr>
+    <td>Magezi Golden Bitwire</td>
+</tr>
+<tr>
+    <td>Nabaasa Esther</td>
+</tr>
+<tr>
+    <td rowspan="3">Chemistry</td>
+    <td>Matsiko Julius</td>
+</tr>
+<tr>
+    <td>Tukwasibwe Jonathan</td>
+</tr>
+<tr>
+    <td>Mwesigwa Ceopas Bama</td>
+</tr>
+<tr>
+    <td rowspan="3">English</td>
+    <td>Sebishingwe-Mwise Godfrey</td>
+</tr>
+<tr>
+    <td>Kyarimpa Annete</td>
+</tr>
+<tr>
+    <td>Byasigaraho Jackson</td>
+</tr>
+<tr>
+    <td>Literature in English</td>
+    <td>Bamwerinde Florence</td>
+</tr>
+<tr>
+    <td rowspan="2">French</td>
+    <td>Ndegejeho Christopher</td>
+</tr>
+<tr>
+    <td>Gumisiriza Micheal</td>
+</tr>
+<tr>
+    <td rowspan="3">Geography</td>
+    <td>Munyamagana Wence</td>
+</tr>
+<tr>
+    <td>Bigabwa Eric</td>
+</tr>
+<tr>
+    <td>Mugisha Tophil</td>
+</tr>
+<tr>
+    <td rowspan="3">History</td>
+    <td>Beingana Patrick</td>
+</tr>
+<tr>
+    <td>Busingye Anne</td>
+</tr>
+<tr>
+    <td>Owoyesiga thomson</td>
+</tr>
+<tr>
+    <td rowspan="2">Mathematics</td>
+    <td>Kyasiima Johson</td>
+</tr>
+<tr>
+    <td>Tumwine Joseph Chaka</td>
+</tr>
+<tr>
+    <td rowspan="2">Physics</td>
+    <td>Akankwasa Herbert</td>
+</tr>
+<tr>
+    <td>Ainomugisha Juliet</td>
+</tr>
+<tr>
+    <td rowspan="3">CRE</td>
+    <td>Bingana Patrick</td>
+</tr>
+<tr>
+    <td>Nalugwa Merab</td>
+</tr>
+<tr>
+    <td>Tugume Manzi</td>
+</tr>
+<tr>
+    <td>Kiswahili</td>
+    <td>Sabimana Evas</td>
+</tr>
+<tr>
+    <td>Technical Drawing</td>
+    <td>Twinomugisha Zachany</td>
+</tr>
+<tr>
+    <td rowspan="3">Entreprenuership</td>
+    <td>Akampurira Abraham</td>
+</tr>
+<tr>
+    <td>Muhindo Richard</td>
+</tr>
+<tr>
+    <td>Rubaganjana Christoper</td>
+</tr>
+
+
+</table>
+    
+
+<script>
+    var acc= document.getElementsByClassName("accordion");
+    for (var i=0; i<acc.length; i++){
+        acc[i].addEventListener("click",function(){
+            this.classList.toggle("active");
+            var panel= this.nextElementSibling;
+            panel.style.display=
+            (panel.style.display === "block")?
+            "none": "block";
+        })
+    }
+</script>
+</body>
+    </main>
+        
+</html>

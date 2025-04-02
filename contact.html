@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css"/>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="news&events.html">News&Events</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contact_container">
+        <h1>KIGEZI HIGH SCHOOL</h1>
+        <img src="khs badge2.jpg" alt="JPEG IMAGE">
+        <address>Rugarama Hill<br> Western Uganda</address>
+        <h2>Contact Us</h2>
+        <form id="ContactForm" onsubmit="return validateForm( )" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea name="message" id="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="map_container">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/place/Kigezi+High+School/@-1.2403948,29.9835872,17z/data=!3m1!4b1!4m6!3m5!1s0x19dc0e1bdaa1e19f:0x6e6463ccff731f01!8m2!3d-1.2403948!4d29.9835872!16s%2Fm%2F011q8cjc?entry=ttu&g_ep=EgoyMDI1MDMyNS4xIKXMDSoASAFQAw%3D%3D" width="600" height="450" frameborder="0" style="border: 0;" allowfullscreen=""
+            aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+</body>
+<footer>
+    <p>&copy;2025 Kigezi High school.All rights reserved.</p>
+</footer>
+</html>

@@ -1,0 +1,12 @@
+p{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+table{
+    width: 50%;
+    border: 0cm;
+}
+td{
+    border: 1px solid;
+}
